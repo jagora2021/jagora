@@ -17,7 +17,7 @@ function showMenu() {
 }
 
 function hideMenu() {
-	menu.style.transform = 'translateY(-60vh)';
+	menu.style.transform = 'translateY(-50vh)';
 	hamburgerBtn.style.transform = 'translateY(0)';
 	closeBtn.style.transform = 'scale(0)';
 }
