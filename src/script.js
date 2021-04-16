@@ -11,15 +11,15 @@ function rotate() {
 }
 
 function showMenu() {
-	menu.style.transform = 'translateY(4rem)';
-	closeBtn.style.transform = 'scale(1)';
+	menu.style.transform = 'translateY(9vh)';
+	closeBtn.style.transform = 'translateX(0)';
 	hamburgerBtn.style.transform = 'translateY(-100px)';
 }
 
 function hideMenu() {
 	menu.style.transform = 'translateY(-50vh)';
 	hamburgerBtn.style.transform = 'translateY(0)';
-	closeBtn.style.transform = 'scale(0)';
+	closeBtn.style.transform = 'translateX(200px)';
 }
 
 hamburgerBtn.addEventListener('click', showMenu);
