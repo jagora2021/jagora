@@ -269,6 +269,7 @@ section > h1::before {
 @media (max-width: 750px) {
 	body {
 		padding-bottom: 3rem;
+		overflow-x: hidden;
 	}
 	.menu,
 	.menu-close-btn {
@@ -280,7 +281,7 @@ section > h1::before {
 	}
 	.menu-close-btn {
 		cursor: pointer;
-		transform: scale(0);
+		transform: translateX(200px);
 	}
 	nav ul {
 		display: none;
