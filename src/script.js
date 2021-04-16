@@ -12,14 +12,14 @@ function rotate() {
 
 function showMenu() {
 	menu.style.transform = 'translateY(9vh)';
-	closeBtn.style.transform = 'translateX(0)';
+	closeBtn.style.transform = 'scale(1)';
 	hamburgerBtn.style.transform = 'scale(0)';
 }
 
 function hideMenu() {
 	menu.style.transform = 'translateY(-50vh)';
 	hamburgerBtn.style.transform = 'scale(1)';
-	closeBtn.style.transform = 'translateX(200px)';
+	closeBtn.style.transform = 'scale(0)';
 }
 
 hamburgerBtn.addEventListener('click', showMenu);

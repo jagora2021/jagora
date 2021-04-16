@@ -274,14 +274,14 @@ section > h1::before {
 	.menu,
 	.menu-close-btn {
 		display: block;
-		position: fixed;
+		position: absolute;
 		right: 1rem;
 		z-index: 2;
 		transition: 400ms ease;
 	}
 	.menu-close-btn {
 		cursor: pointer;
-		transform: translateX(200px);
+		transform: scale(0);
 	}
 	nav ul {
 		display: none;
@@ -310,10 +310,11 @@ section > h1::before {
 	.menu-links {
 		display: flex;
 		position: fixed;
-		width: 100%;
+		width: 100vw;
 		height: fit-content;
 		top: 0;
 		right: 0;
+		left: 0;
 		background-color: #252525de;
 		z-index: 2;
 		justify-content: center;
