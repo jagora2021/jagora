@@ -1,0 +1,91 @@
+<?php
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect him to login page
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+  header("location: login.php");
+  exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./src/img/Jagora.png" type="image/x-icon" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<link rel="stylesheet" href="./src/css/read-more-pages.css" />
+		<script defer src="./src/script.js"></script>
+		<title>Jagora || Zero Hunger</title>
+	</head>
+
+	<body>
+		<div class="menu-links">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html">About</a></li>
+				<li><a href="index.html">Contact</a></li>
+			</ul>
+		</div>
+		<nav>
+			<div class="logo">
+				<img src="./src/img/Jagora.png" />
+			</div>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+			</ul>
+			<div class="menu">
+				<div class="hamburger"></div>
+			</div>
+			<div class="menu-close-btn">&times;</div>
+		</nav>
+
+		<section>
+			<div class="img-section">
+				<img src="./src/img/poor-education-pic.jpg" alt="" />
+			</div>
+			<main>
+				<h1>Zero Hunger</h1>
+				<p>
+					Every day too many men and women across the globe struggle to feed their
+					children a nutritious meal. In a world where we produce enough food to feed
+					everyone, 690 million people still go to bed on an empty stomach each night.
+					Acute food insecurity affected 135 million people in 55 countries in 2019. Even
+					more – one in three – suffer from some form of malnutrition.
+				</p>
+				<p>
+					Eradicating hunger and malnutrition is one of the great challenges of our time.
+					Not only do the consequences of not enough – or the wrong – food cause suffering
+					and poor health, they also slow progress in many other areas of development like
+					education and employment. In 2015 the global community adopted the 17 Global
+					Goals for Sustainable Development to improve people’s lives by 2030. Goal 2 –
+					Zero Hunger – pledges to end hunger, achieve food security, improve nutrition
+					and promote sustainable agriculture, and is the priority of the World Food
+					Programme. Every day, WFP and its partners work to bring us closer to a zero
+					hunger world. With our humanitarian food assistance, we provide nutritious food
+					to those in urgent need. Meanwhile our complementary programmes address the root
+					causes of hunger, building the resilience of communities, so we don’t need to
+					keep saving the same lives each year The world has made great progress in
+					reducing hunger: there are 300 million fewer hungry people than in 1990-92,
+					despite a 1.9 billion increase in the world’s population. But there is still a
+					long way to go, and no one organization can achieve Zero Hunger if it works
+					alone. If we want to see a world free of hunger by 2030, governments, citizens,
+					civil society organizations and the private sector must collaborate to invest,
+					innovate and create lasting solutions.
+				</p>
+			</main>
+		</section>
+	</body>
+</html>

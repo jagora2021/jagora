@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.img-section {
+	margin: 0;
+}
+
+img {
+	width: 100vw;
+	height: 400px;
+	object-fit: cover;
+}
+
+section {
+	width: 100vw;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 3rem;
+	color: crimson;
+	margin: 0 6rem;
+}
+
+p {
+	padding: 0 6rem;
+	margin: 1rem 0;
+	line-height: 2;
+	font-size: 1.3rem;
+}
+
+section main {
+	margin: 1rem 0;
+}
+
+@media only screen and (max-width: 400px) {
+	img {
+		height: 300px;
+	}
+	p {
+		font-size: 1.1rem;
+		padding: 0 0.5rem;
+		line-height: 2;
+	}
+}

@@ -1,0 +1,91 @@
+<?php
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect him to login page
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+  header("location: login.php");
+  exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./src/img/Jagora.png" type="image/x-icon" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<link rel="stylesheet" href="./src/css/read-more-pages.css" />
+		<script defer src="./src/script.js"></script>
+		<title>Jagora || Quality Education</title>
+	</head>
+
+	<body>
+		<div class="menu-links">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html">About</a></li>
+				<li><a href="index.html">Contact</a></li>
+			</ul>
+		</div>
+		<nav>
+			<div class="logo">
+				<img src="./src/img/Jagora.png" />
+			</div>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+			</ul>
+			<div class="menu">
+				<div class="hamburger"></div>
+			</div>
+			<div class="menu-close-btn">&times;</div>
+		</nav>
+
+		<section>
+			<div class="img-section">
+				<img src="./src/img/poor-education-pic.jpg" alt="" />
+			</div>
+			<main>
+				<h1>Quality Education</h1>
+				<p>
+					Since 2000, there has been enormous progress in achieving the target of
+					universal primary education. The total enrolment rate in developing regions
+					reached 91 percent in 2015, and the worldwide number of children out of school
+					has dropped by almost half. There has also been a dramatic increase in literacy
+					rates, and many more girls are in school than ever before. These are all
+					remarkable successes.
+				</p>
+				<p>
+					Progress has also been tough in some developing regions due to high levels of
+					poverty, armed conflicts and other emergencies. In Western Asia and North
+					Africa, ongoing armed conflict has seen an increase in the number of children
+					out of school. This is a worrying trend. While Sub-Saharan Africa made the
+					greatest progress in primary school enrolment among all developing regions –
+					from 52 percent in 1990, up to 78 percent in 2012 – large disparities still
+					remain. Children from the poorest households are up to four times more likely to
+					be out of school than those of the richest households. Disparities between rural
+					and urban areas also remain high.
+				</p>
+				<p>
+					Achieving inclusive and quality education for all reaffirms the belief that
+					education is one of the most powerful and proven vehicles for sustainable
+					development. This goal ensures that all girls and boys complete free primary and
+					secondary schooling by 2030. It also aims to provide equal access to affordable
+					vocational training, to eliminate gender and wealth disparities, and achieve
+					universal access to a quality higher education.
+				</p>
+			</main>
+		</section>
+	</body>
+</html>

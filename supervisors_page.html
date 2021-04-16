@@ -1,0 +1,107 @@
+<?php
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect him to login page
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+  header("location: login.php");
+  exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./src/img/Jagora.png" type="image/x-icon" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<link rel="stylesheet" href="./src/css/supervisors_page.css" />
+		<script defer src="./src/script.js"></script>
+		<title>Jagora || Supervisor</title>
+	</head>
+
+	<body>
+		<div class="menu-links">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html">About</a></li>
+				<li><a href="index.html">Contact</a></li>
+			</ul>
+		</div>
+		<nav>
+			<div class="logo">
+				<img src="./src/img/Jagora.png" />
+			</div>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+			</ul>
+			<div class="menu">
+				<div class="hamburger"></div>
+			</div>
+			<div class="menu-close-btn">&times;</div>
+		</nav>
+
+		<section class="supervisors-page">
+			<h2>SUPERVISOR</h2>
+
+			<div class="container">
+				<div class="profile">
+					<img src="./src/img/education.png" />
+					<div class="profile-info">
+						<p>Name: <span>Tunde</span></p>
+						<p>Organisation: <span>Nile</span></p>
+					</div>
+				</div>
+
+				<div class="volunteers-list">
+					<h3>Volunteers under supervisor</h3>
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Status</th>
+						</tr>
+						<tr>
+							<td>John Doe</td>
+							<td>Employee</td>
+						</tr>
+						<tr>
+							<td>Halima Doe</td>
+							<td>Visitor</td>
+						</tr>
+						<tr>
+							<td>Jane Doe</td>
+							<td>Student</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<div class="add-volunteer">
+				<a href="./volunteer_registration_form.html"
+					><button>Register new volunteer</button></a
+				>
+			</div>
+		</section>
+
+		<div class="nav-bottom">
+			<a><img src="https://img.icons8.com/ios/24/ffffff/soup-plate.png" /></a>
+			<a
+				><img
+					src="https://img.icons8.com/material-outlined/24/ffffff/gender-equality.png"
+			/></a>
+			<a><img src="https://img.icons8.com/windows/24/ffffff/book-and-pencil.png" /></a>
+			<a><img src="https://img.icons8.com/ios/24/ffffff/war_refugee.png" /></a>
+		</div>
+	</body>
+</html>

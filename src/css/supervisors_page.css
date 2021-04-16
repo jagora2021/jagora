@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+section.supervisors-page {
+	margin: 1rem auto;
+	width: fit-content;
+	letter-spacing: 0.05rem;
+	padding: 0 0.5rem;
+}
+
+.supervisors-page h2 {
+	font-size: 2.3rem;
+	text-align: center;
+	margin: 0;
+	margin-top: 2rem;
+	color: crimson;
+}
+
+.supervisors-page .container {
+	margin: 2rem 0;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	margin: auto;
+}
+
+.profile img {
+	object-fit: cover;
+	margin-right: 0.3rem;
+	width: 80px;
+	/* border-radius: 50%; */
+}
+
+.profile-info p {
+	letter-spacing: 0.1rem;
+	font-size: 1.1rem;
+	padding: 0.4rem;
+}
+
+.volunteers-list {
+	margin: 0;
+	margin-top: 2.5rem;
+	font-size: 1.4rem;
+	width: fit-content;
+}
+
+.volunteers-list h3 {
+	text-align: center;
+	color: crimson;
+}
+
+.volunteers-list table {
+	width: fit-content;
+	border-collapse: collapse;
+	margin: 0.5rem auto;
+}
+.volunteers-list table td,
+th {
+	font-size: 1rem;
+	text-align: left;
+	padding: 0.5rem 2rem;
+	border-bottom: 1px solid #eee;
+}
+.volunteers-list table th {
+	font-size: 1.2rem;
+}
+
+.supervisors-page button {
+	padding: 0.7rem 0.6rem;
+	background-color: white;
+	border: 4px solid crimson;
+	color: crimson;
+	font-weight: 500;
+	outline: none;
+	cursor: pointer;
+	font-size: 1rem;
+	transition: 300ms ease;
+	margin: auto;
+}
+
+.supervisors-page button:hover {
+	background-color: crimson;
+	border: 4px solid white;
+	color: white;
+}
+
+.supervisors-page .add-volunteer {
+	width: fit-content;
+	margin: auto;
+}
+
+@media only screen and (max-width: 330px) {
+	.profile-info p {
+		font-size: 0.9rem;
+	}
+	.volunteers-list {
+		margin-top: 1rem;
+		font-size: 1.1rem;
+	}
+	.volunteers-list table td,
+	th {
+		font-size: 0.9rem;
+		padding: 0.5rem 1rem;
+	}
+	.volunteers-list table th {
+		font-size: 1rem;
+	}
+	.supervisors-page h2 {
+		font-size: 2rem;
+		margin-top: 1rem;
+	}
+}
