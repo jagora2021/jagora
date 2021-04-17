@@ -14,7 +14,7 @@ Home: -About
 How to Use:
 1. Connect your device to the internet
 2. Open your web browser
-3. Visit https://jagora-project.github.io/jagora
+3. Visit https://jagora2021.github.io/jagora/
 4. As a volunteer:
 	i. Choose any Sustainable Development Goal you would like to learn more about and click "read more".
 	ii. After reading all relevant information on goals, scroll down to Register section to see accredited volunteering centres and supervisors you can visit to register.
