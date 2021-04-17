@@ -5,6 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	letter-spacing: 0.04rem;
+	font-family: 'Poppins', sans-serif;
 }
 
 section.volunteer-page {
@@ -46,8 +47,7 @@ body > section > h3 {
 	padding: 0.4rem;
 }
 
-body > section > div.content > div.contributions > h2,
-body > section > div.content > div.hours-worked > h2 {
+body > section > div.content > div.contributions > h2 {
 	font-size: 1.4rem;
 	text-align: center;
 	color: crimson;
@@ -55,38 +55,29 @@ body > section > div.content > div.hours-worked > h2 {
 }
 
 .content {
-	display: flex;
-	width: 600px;
-	justify-content: space-around;
-	margin: auto;
+	/* width: 600px; */
+	/* margin: auto; */
 }
 
 .content .contributions {
-	width: 49%;
-}
-.content .hours-worked {
-	width: 49%;
+	width: 100%;
 }
 
-.content .contributions table,
-.content .hours-worked table {
+.content .contributions table {
 	border-collapse: collapse;
 	margin: auto;
 	width: 100%;
 }
-.content .contributions table tr,
-.content .hours-worked table tr {
+.content .contributions table tr {
 	border-bottom: 1px solid #eee;
 }
-.content .contributions table th,
-.content .hours-worked table th {
+.content .contributions table th {
 	border: 1px solid #eee;
 	padding: 0.4rem 0.5rem 0.4rem 0.5rem;
 	font-size: 1.1rem;
 	text-align: left;
 }
-.content .contributions table td,
-.content .hours-worked table td {
+.content .contributions table td {
 	border: 1px solid #eee;
 	padding: 0.3rem 0.5rem 0.3rem 0.5rem;
 }
@@ -113,15 +104,13 @@ ol {
 		max-width: 97vw;
 		justify-content: space-evenly;
 	}
-	.content .contributions table th,
-	.content .hours-worked table th {
+	.content .contributions table th {
 		border: 1px solid #eee;
 		padding: 0.4rem 0.5rem 0.4rem 0.5rem;
 		font-size: 0.9rem;
 		text-align: left;
 	}
-	.content .contributions table td,
-	.content .hours-worked table td {
+	.content .contributions table td {
 		border: 1px solid #eee;
 		padding: 0.2rem 0.4rem;
 		font-size: 0.8rem;
@@ -140,8 +129,7 @@ ol {
 		margin: 1rem auto;
 		width: fit-content;
 	}
-	body > section > div.content > div.contributions > h2,
-	body > section > div.content > div.hours-worked > h2 {
+	body > section > div.content > div.contributions > h2 {
 		font-size: 1rem;
 		text-align: left;
 		color: crimson;

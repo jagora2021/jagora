@@ -24,7 +24,7 @@ section {
 h1 {
 	font-size: 2.5rem;
 	color: crimson;
-	margin: 0 0.6rem;
+	padding: 0 6rem;
 }
 
 p {
@@ -38,9 +38,14 @@ section main {
 	margin: 1rem 0;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 750px) {
 	img {
 		height: 300px;
+	}
+	h1 {
+		font-size: 2.5rem;
+		color: crimson;
+		padding: 0 0.5rem;
 	}
 	p {
 		font-size: 1.1rem;
