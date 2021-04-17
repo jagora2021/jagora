@@ -42,7 +42,6 @@ body > section > h3 {
 }
 
 .profile-info p {
-	letter-spacing: 0.1rem;
 	font-size: 1.1rem;
 	padding: 0.4rem;
 }
@@ -52,11 +51,6 @@ body > section > div.content > div.contributions > h2 {
 	text-align: center;
 	color: crimson;
 	margin-bottom: 0.5rem;
-}
-
-.content {
-	/* width: 600px; */
-	/* margin: auto; */
 }
 
 .content .contributions {
@@ -138,5 +132,9 @@ ol {
 	body > section > h3:nth-child(5) {
 		font-size: 1rem;
 		margin-bottom: 2rem;
+	}
+	.profile-info p {
+		font-size: 1rem;
+		padding: 0.4rem;
 	}
 }

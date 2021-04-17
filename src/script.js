@@ -11,7 +11,7 @@ function rotate() {
 }
 
 function showMenu() {
-	menu.style.transform = 'translateY(9vh)';
+	menu.style.transform = 'translateY(8vh)';
 	closeBtn.style.transform = 'scale(1)';
 	hamburgerBtn.style.transform = 'scale(0)';
 }

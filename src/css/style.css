@@ -19,7 +19,6 @@ body {
 	background-position: center;
 	background-attachment: fixed;
 	font-family: 'Poppins', sans-serif;
-	/* font-family: 'Quicksand', sans-serif; */
 	font-weight: 400;
 	z-index: 1;
 	color: #fff;
@@ -372,5 +371,10 @@ section > h1::before {
 	}
 	.login-options {
 		display: none;
+	}
+	.in-progress {
+		margin: 0 0.5rem;
+		color: crimson;
+		font-size: 1.5rem;
 	}
 }
